@@ -5,6 +5,7 @@ then
     git commit -m "$1"
     git tag -a "$2" -m "$3"
     git push
+    git push origin tag "$2"
 else
     echo "Not enough arguments"
     echo "Usage:"
